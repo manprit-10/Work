@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Mate+SC&family=Raleway&family=Roboto:wght@500&family=Source+Sans+Pro:wght@300;600&family=Squada+One&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+.item{
+    background: lightgrey;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+.title{
+    display: flex;
+    gap: 5px;
+}
+.title span{
+    padding-top: 5px;
+    font-weight: bolder;
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
