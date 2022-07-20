@@ -4,6 +4,7 @@ import { useState } from "react";
 const Accordian = (props) => {
   const getContent = function (data) {
     return Object.entries(data).map(function (item) {
+      // console.log(item);
       return (
         <li key={item}>
           <p className="questions">
@@ -12,7 +13,6 @@ const Accordian = (props) => {
           <p>A : {item[1]["A"]}</p>
         </li>
       );
-      // console.log(item);
     });
   };
 
