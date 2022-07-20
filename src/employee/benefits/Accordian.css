@@ -17,9 +17,12 @@
 .title{
     display: flex;
     gap: 5px;
+    padding: 5px;
+    align-items: center;
+    
 }
 .title span{
-    padding-top: 5px;
+    
     font-weight: bolder;
 }
 .content{
@@ -28,7 +31,27 @@
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 .content.show{
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
+    
+    max-height: 1000px;
+    transition: all 0.9s ease-in-out;
+}
+
+.questions-list{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    list-style:none;
+
+    text-align: left;
+}
+
+.questions-list li{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.questions{
+    font-weight: bold;
 }
