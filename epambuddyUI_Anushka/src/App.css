@@ -1,16 +1,20 @@
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 3.5fr 1fr;
-  padding:2%;
+  padding: 2%;
 }
-.accordian{
+.accordian {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.active {
+  border-bottom: 3px solid rgb(19, 120, 235);
 }

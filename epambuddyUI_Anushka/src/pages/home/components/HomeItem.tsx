@@ -17,7 +17,9 @@ export default ({ employeeDetail }: HomeItemProps) => {
       {isActive && <hr />}
       {isActive &&
         employeeDetail.categories.map((data) => (
-          <Link to="/employee/benefits">
+          <Link
+            to={`/employee/benefits/${data.toLowerCase().split(" ").join("")}`}
+          >
             <div className="category">{data}</div>
           </Link>
         ))}

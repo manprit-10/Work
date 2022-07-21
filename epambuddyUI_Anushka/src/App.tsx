@@ -5,8 +5,9 @@ import EmployeeBenefits from "./pages/tabs/employee/benefits/EmployeeBenefits";
 import NavBar from "./components/navbar/NavBar";
 
 import "./App.css";
-import "@epam/uui-components/styles.css";
+// import "@epam/uui-components/styles.css";
 import SideBar from "./components/sidebar/SideBar";
+import { MainRoutes } from "./pages/tabs/employee/benefits/components/Routes";
 
 function App() {
   return (
@@ -15,11 +16,17 @@ function App() {
         <NavBar />
         <div className="wrapper">
           <SideBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/search" element={<SearchResults />} />
-            <Route path="/employee/benefits" element={<EmployeeBenefits />} />
-          </Routes>
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/search" element={<SearchResults />} />
+              <Route
+                path="/employee/benefits/*"
+                element={<EmployeeBenefits />}
+              />
+            </Routes>
+            <MainRoutes />
+          </div>
           <div className="extra-space"></div>
         </div>
       </Router>

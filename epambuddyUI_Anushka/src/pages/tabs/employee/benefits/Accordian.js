@@ -27,8 +27,8 @@ const Accordian = (props) => {
           </div>
           <div
             className={
-              // props.isActive === props.title ? "content show" : "content"
-              "content show"
+              props.isActive === props.title ? "content show" : "content"
+              // "content show"
             }
           >
             {/* <div className="content show"> */}
