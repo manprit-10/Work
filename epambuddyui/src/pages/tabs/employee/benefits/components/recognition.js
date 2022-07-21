@@ -1,19 +1,22 @@
 import Accordian from "../Accordian";
-
+import { useIsActive } from "../hooks/useIsActive";
 export const Recognition = function () {
+  const { isActive, clickHandler } = useIsActive();
   return Object.entries(data).map(function (recognition) {
     return (
       <Accordian
         key={recognition[0]}
         title={recognition[0]}
         questions={recognition[1]}
+        onClick={clickHandler}
+        isActive={isActive}
       />
     );
   });
 };
 
 const data = {
-  "Birthday": {
+  Birthday: {
     Q155: {
       Q155: "Where should I update my Birthday to get the gift points ?",
       A: "You need to update the Birthday on UPSA. Please Click Here",

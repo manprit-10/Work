@@ -1,16 +1,27 @@
+import { useState } from "react";
+import { useIsActive } from "../hooks/useIsActive";
 import Accordian from "../Accordian";
 
 export const Leaves = function () {
+  const { isActive, clickHandler } = useIsActive();
+
   return Object.entries(data).map(function (leave) {
-    
-    return <Accordian title={leave[0]} questions={leave[1]} />;
+    return (
+      <Accordian
+        key={leave[0]}
+        title={leave[0]}
+        questions={leave[1]}
+        onClick={clickHandler}
+        isActive={isActive}
+      />
+    );
   });
 };
 
 const data = {
-    "Bereavement Leaves": {
-        Q17: {
-            Q17: "Are Bereavement leaves carried forward to next year",
+  "Bereavement Leaves": {
+    Q17: {
+      Q17: "Are Bereavement leaves carried forward to next year",
       A: "No carry forward to next calendar year",
     },
     Q18: {

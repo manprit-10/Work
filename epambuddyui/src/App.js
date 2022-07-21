@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import SearchResults from "./pages/search/SearchResults";
 import EmployeeBenefits from "./pages/tabs/employee/benefits/EmployeeBenefits";
@@ -9,7 +9,7 @@ import { Recognition } from "./pages/tabs/employee/benefits/components/recogniti
 import { TaxBenefits } from "./pages/tabs/employee/benefits/components/taxbenefit";
 
 import "./App.css";
-import "@epam/uui-components/styles.css";
+// import "@epam/uui-components/styles.css";
 
 function App() {
   return (
@@ -30,26 +30,13 @@ function App() {
         </nav> */}
       </header>
       <Router>
-
         <Routes>
-
           <Route path="/" element={<Home />} />
-
           <Route path="/search" element={<SearchResults />} />
-
-          <Route path="/employee/benefits" element={<EmployeeBenefits />}> </Route>
-{/*           
-          <Route path="/employee/benefits/leaves" element={<Leaves/>} />
-
-          <Route path="/employee/benefits/medicalbenefits" element={<MedicalBenefits/>} />
-
-          <Route path="/employee/benefits/recognition" element={<Recognition/>}/>
-
-          <Route path="/employee/benefits/taxbenefits" element={<TaxBenefits />}/> */}
-
+          <Route path="/employee/benefits/*" element={<EmployeeBenefits />} />
         </Routes>
 
-          {/* <MainRoutes /> */}
+        <MainRoutes />
       </Router>
     </div>
   );
