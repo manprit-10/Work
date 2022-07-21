@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-content {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #706E6B;
+  padding:1%;
+}
+
+.home-items {
+  padding:2%;
+  background-color: #F4F5F7;
+  /* font-family: 'Avenir'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.home-items img {
+  margin: 0 2%;
+}
+
+.home-items hr {
+  margin-top: 10px;
+}
+
+.category {
+  margin:1% 4%;
+  padding:1%;
+}
+
+.home-items a{
+  text-decoration: none;
+  color:black;
+}

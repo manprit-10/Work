@@ -1,0 +1,38 @@
+.search-bar {
+  margin-right: 8%;
+  width:40%;
+  font-family: 'Avenir Next';
+  font-style: normal;
+}
+
+.search-bar input {
+  width:80%;
+  padding:1%;
+  
+  background: #FFFFFF;
+  /* Foundation / Blue / Azure */
+
+  border: 1px solid #1589EE;
+  /* 06 - Input / Focus */
+
+  box-shadow: 0px 0px 3px #0070D2;
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.search-bar button {
+  width:20%;
+  padding:1.5%;
+  background-color: #0070d2;
+  color:white;
+  cursor: pointer;
+  border: 1px solid #1589EE;
+  border-radius: 8%;
+}
+
+.search-bar button:hover {
+  background-color: #01559f;;
+}

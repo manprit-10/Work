@@ -1,0 +1,26 @@
+.side-bar {
+  /* Auto layout */
+  margin:15% 10%;
+  padding:5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:19px;
+}
+
+.side-bar a{
+  text-decoration: none;
+  color:#000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.side-items {
+  padding:5%;
+  width:max-content;
+}
+
+.side-items:hover {
+  border-left: 2px solid #c4cc65;
+}
