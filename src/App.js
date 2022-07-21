@@ -1,16 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Accordian from "./employee/benefits/Accordian";
-import { Leaves } from "./employee/benefits/components/Leaves";
-import { Medical } from "./employee/benefits/components/Medical";
+
+import { EmployeeRoutes } from "./employee/benefits/components/EmployeeRoutes";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Accordian/> */}
-      {/* <Leaves /> */}
-      <Medical />
-    </div>
+    <Router>
+      <Link to="/employee/benefits/leaves">Leaves</Link>
+      <Link to="/employee/benefits/medical">Medical</Link>
+      <EmployeeRoutes />
+    </Router>
   );
 }
 

@@ -1,5 +1,5 @@
 import "./EmployeeBenefits.css";
-import { Link , Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import { Leaves } from "./components/leaves";
 import { TaxBenefits } from "./components/taxbenefit";
 import { MedicalBenefits } from "./components/medical";
@@ -11,18 +11,18 @@ export default () => {
       <div className="heading">
         <ul>
           <li>
-            <Link to="/leaves">Leaves</Link>
+            <Link to="/employee/benefits/leaves">Leaves</Link>
           </li>
           <li>
-            <Link to="/medicalbenefits">
+            <Link to="/employee/benefits/medicalbenefits">
               Medical Benefits
             </Link>
           </li>
           <li>
-            <Link to="/recognition">Recognition</Link>
+            <Link to="/employee/benefits/recognition">Recognition</Link>
           </li>
           <li>
-            <Link to="/taxbenefits">Tax Benefits</Link>
+            <Link to="/employee/benefits/taxbenefits">Tax Benefits</Link>
           </li>
         </ul>
       </div>

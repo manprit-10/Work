@@ -9,7 +9,7 @@ import { Recognition } from "./pages/tabs/employee/benefits/components/recogniti
 import { TaxBenefits } from "./pages/tabs/employee/benefits/components/taxbenefit";
 
 import "./App.css";
-import "@epam/uui-components/styles.css";
+// import "@epam/uui-components/styles.css";
 
 function App() {
   return (
@@ -30,26 +30,32 @@ function App() {
         </nav> */}
       </header>
       <Router>
-
         <Routes>
-
           <Route path="/" element={<Home />} />
 
           <Route path="/search" element={<SearchResults />} />
 
-          <Route path="/employee/benefits" element={<EmployeeBenefits />}> </Route>
-{/*           
-          <Route path="/employee/benefits/leaves" element={<Leaves/>} />
+          <Route path="/employee/benefits/*" element={<EmployeeBenefits />} />
 
-          <Route path="/employee/benefits/medicalbenefits" element={<MedicalBenefits/>} />
+          {/* <Route path="/employee/benefits/leaves" element={<Leaves />} />
 
-          <Route path="/employee/benefits/recognition" element={<Recognition/>}/>
+          <Route
+            path="/employee/benefits/medicalbenefits"
+            element={<MedicalBenefits />}
+          />
 
-          <Route path="/employee/benefits/taxbenefits" element={<TaxBenefits />}/> */}
+          <Route
+            path="/employee/benefits/recognition"
+            element={<Recognition />}
+          />
 
+          <Route
+            path="/employee/benefits/taxbenefits"
+            element={<TaxBenefits />}
+          /> */}
         </Routes>
 
-          {/* <MainRoutes /> */}
+        <MainRoutes />
       </Router>
     </div>
   );
