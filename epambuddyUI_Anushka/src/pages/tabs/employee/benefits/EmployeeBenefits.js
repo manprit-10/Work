@@ -16,18 +16,18 @@ export default () => {
     <div>
       <div className="heading">
         <ul>
-          <li className="link " onClick={clickHandler}>
+          <li className="link ">
             <Link to="/employee/benefits/leaves">Leaves</Link>
           </li>
-          <li className="link" onClick={clickHandler}>
+          <li className="link">
             <Link to="/employee/benefits/medicalbenefits">
               Medical Benefits
             </Link>
           </li>
-          <li className="link" onClick={clickHandler}>
+          <li className="link">
             <Link to="/employee/benefits/recognition">Recognition</Link>
           </li>
-          <li className="link" onClick={clickHandler}>
+          <li className="link">
             <Link to="/employee/benefits/taxbenefits">Tax Benefits</Link>
           </li>
         </ul>
