@@ -9,3 +9,8 @@
   grid-template-columns: 1fr 3.5fr 1fr;
   padding:2%;
 }
+.accordian{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
