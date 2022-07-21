@@ -1,9 +1,17 @@
 import Accordian from "../Accordian";
-
+import { useIsActive } from "../hooks/useIsActive";
 export const MedicalBenefits = function () {
+  const { isActive, clickHandler } = useIsActive();
   return Object.entries(data).map(function (medical) {
-    
-    return <Accordian key={medical[0]} title={medical[0]} questions={medical[1]} />;
+    return (
+      <Accordian
+        key={medical[0]}
+        title={medical[0]}
+        questions={medical[1]}
+        onClick={clickHandler}
+        isActive={isActive}
+      />
+    );
   });
 };
 

@@ -1,5 +1,4 @@
 import "./Accordian.css";
-import { useState } from "react";
 
 const Accordian = (props) => {
   const getContent = function (data) {
@@ -15,16 +14,23 @@ const Accordian = (props) => {
     });
   };
 
+  const clickHandler = function () {
+    props.onClick(props.title);
+  };
   return (
-    <div className="wrapper">
+    <div className="wrapper" onClick={clickHandler}>
       <div className="accordian">
         <div className="item">
           <div className="title">
-            {/* <span>{select === index ? "-" : "+"}</span> */}
+            <span>{props.isActive === props.title ? "-" : "+"}</span>
             <h2>{props.title}</h2>
           </div>
-          {/* <div className={select === index ? "content show" : "content"}> */}
-          <div className="content show">
+          <div
+            className={
+              props.isActive === props.title ? "content show" : "content"
+            }
+          >
+            {/* <div className="content show"> */}
             <hr></hr>
             <ul className="questions-list">{getContent(props.questions)}</ul>
           </div>
@@ -33,7 +39,5 @@ const Accordian = (props) => {
     </div>
   );
 };
-
-
 
 export default Accordian;

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import SearchResults from "./pages/search/SearchResults";
 import EmployeeBenefits from "./pages/tabs/employee/benefits/EmployeeBenefits";
@@ -32,27 +32,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/search" element={<SearchResults />} />
-
           <Route path="/employee/benefits/*" element={<EmployeeBenefits />} />
-
-          {/* <Route path="/employee/benefits/leaves" element={<Leaves />} />
-
-          <Route
-            path="/employee/benefits/medicalbenefits"
-            element={<MedicalBenefits />}
-          />
-
-          <Route
-            path="/employee/benefits/recognition"
-            element={<Recognition />}
-          />
-
-          <Route
-            path="/employee/benefits/taxbenefits"
-            element={<TaxBenefits />}
-          /> */}
         </Routes>
 
         <MainRoutes />

@@ -26,7 +26,7 @@ export default () => {
           </li>
         </ul>
       </div>
-      <Routes>
+      {/* <Routes>
         <Route path="/employee/benefits/leaves" element={<Leaves />} />
 
         <Route
@@ -43,7 +43,7 @@ export default () => {
           path="/employee/benefits/taxbenefits"
           element={<TaxBenefits />}
         />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

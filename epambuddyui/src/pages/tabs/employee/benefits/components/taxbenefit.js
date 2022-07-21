@@ -1,12 +1,16 @@
 import Accordian from "../Accordian";
-
+import { useIsActive } from "../hooks/useIsActive";
 export const TaxBenefits = function () {
+  const { isActive, clickHandler } = useIsActive();
+
   return Object.entries(data).map(function (taxbenefits) {
     return (
       <Accordian
         key={taxbenefits[0]}
         title={taxbenefits[0]}
         questions={taxbenefits[1]}
+        onClick={clickHandler}
+        isActive={isActive}
       />
     );
   });
