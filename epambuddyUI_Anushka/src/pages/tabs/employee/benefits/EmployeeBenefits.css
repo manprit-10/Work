@@ -26,11 +26,11 @@ li {
   text-align: center;
 }
 
-.link {
-  border-bottom: 3px solid grey;
+/* .link {
+ 
   padding: 10px;
   width: 100%;
-}
+} */
 
 /* .active {
   border-bottom: 3px solid rgb(19, 120, 235);

@@ -1,10 +1,19 @@
 import "./Accordian.css";
 
-const Accordian = (props) => {
-  const getContent = function (data) {
+type AccordianProps = {
+  accordionData: {
+    title: string;
+    questions: Object;
+    onClick: Function;
+    isActive: string;
+  };
+};
+
+const Accordian = ({ accordionData }: AccordianProps) => {
+  const getContent = function (data: Object) {
     return Object.entries(data).map(function (item) {
       return (
-        <li key={item}>
+        <li key={item[0]}>
           <p className="questions">
             {item[0]} : {item[1][item[0]]}
           </p>
@@ -15,25 +24,31 @@ const Accordian = (props) => {
   };
 
   const clickHandler = function () {
-    props.onClick(props.title);
+    accordionData.onClick(accordionData.title);
   };
   return (
     <div className="wrap" onClick={clickHandler}>
       <div className="accordian">
         <div className="item">
           <div className="title">
-            <span>{props.isActive === props.title ? "-" : "+"}</span>
-            <h2>{props.title}</h2>
+            <span>
+              {accordionData.isActive === accordionData.title ? "-" : "+"}
+            </span>
+            <h2>{accordionData.title}</h2>
           </div>
           <div
             className={
-              props.isActive === props.title ? "content show" : "content"
+              accordionData.isActive === accordionData.title
+                ? "content show"
+                : "content"
               // "content show"
             }
           >
             {/* <div className="content show"> */}
             <hr></hr>
-            <ul className="questions-list">{getContent(props.questions)}</ul>
+            <ul className="questions-list">
+              {getContent(accordionData.questions)}
+            </ul>
           </div>
         </div>
       </div>

@@ -14,7 +14,3 @@
   flex-direction: column;
   gap: 10px;
 }
-
-.active {
-  border-bottom: 3px solid rgb(19, 120, 235);
-}
