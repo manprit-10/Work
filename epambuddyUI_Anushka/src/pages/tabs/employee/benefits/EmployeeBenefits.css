@@ -20,18 +20,17 @@ li {
 .heading ul {
   /* height: 1rem; */
   display: flex;
-  /* gap: 4rem; */
+
   align-items: center;
   margin: 2%;
   text-align: center;
 }
-
-/* .link {
- 
+.link {
   padding: 10px;
   width: 100%;
-} */
+  border-bottom: 3px solid grey;
+}
 
-/* .active {
+.active {
   border-bottom: 3px solid rgb(19, 120, 235);
-} */
+}
