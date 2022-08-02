@@ -1,38 +1,63 @@
 .search-bar {
+  display: flex;
   margin-right: 8%;
-  width:40%;
-  font-family: 'Avenir Next';
-  font-style: normal;
+  width: 40%;
+  flex-direction: column;
 }
-
-.search-bar input {
-  width:80%;
-  padding:1%;
-  
-  background: #FFFFFF;
-  /* Foundation / Blue / Azure */
-
-  border: 1px solid #1589EE;
-  /* 06 - Input / Focus */
-
-  box-shadow: 0px 0px 3px #0070D2;
-  border-radius: 4px;
-
+.search-bar button:hover {
+  background-color: #01559f;
+}
+.search-top {
+  display: inline-flex;
+  border-radius: 0.3rem;
+  background: white;
+}
+.search-input {
+  width: 80%;
+  padding: 1%;
+  border: 0;
   font-weight: 600;
   font-size: 13px;
+  color: gray;
   line-height: 20px;
+  border-radius: 0.3rem;
 }
-
-.search-bar button {
-  width:20%;
-  padding:1.5%;
+.search-input:focus {
+  outline: none;
+}
+.cancel-img {
+  background-color: #ffffff;
+}
+.search-button {
+  width: 20%;
+  padding: 1.5%;
   background-color: #0070d2;
-  color:white;
+  color: white;
   cursor: pointer;
-  border: 1px solid #1589EE;
-  border-radius: 8%;
+  border: 1px solid #1589ee;
+  border-radius: 0.3rem;
 }
-
-.search-bar button:hover {
-  background-color: #01559f;;
+.search-result {
+  margin-top: 3.5%;
+  background-color: #ffffff;
+  /* overflow: hidden;
+  overflow-y: auto;
+  height: 30%; */
+  position: absolute;
+  width: 38.7%;
+  border: 1px;
+  border-color: gainsboro;
+  border-style: solid;
+  padding-bottom: 1%;
+  border-radius: 0.3rem;
+}
+.search-result::-webkit-scrollbar {
+  display: none;
+}
+.search-item {
+  padding-left: 4%;
+  font-size: small;
+  font-weight: 500;
+  font-style: normal;
+  padding: 1%;
 }
