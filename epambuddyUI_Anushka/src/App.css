@@ -1,9 +1,22 @@
+<<<<<<< HEAD
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 3.5fr 1fr;
   padding: 2%;
 }
+<<<<<<< HEAD
 .accordians {
+=======
+.accordian {
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
   display: flex;
   flex-direction: column;
   gap: 10px;

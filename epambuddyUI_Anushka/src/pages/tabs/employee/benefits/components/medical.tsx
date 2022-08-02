@@ -51,4 +51,8 @@ const data = {
       A: "The policy covers pre-hospitalization expenses made prior to 60 days of hospitalization and incurred towards the same illness/ disease due to which hospitalization happens. It also covers all medical expenses for up to 90 days post discharge as advised by the Medical Practitioner. All the bills with summary have to be submitted to ICICI Lombard.",
     },
   },
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930

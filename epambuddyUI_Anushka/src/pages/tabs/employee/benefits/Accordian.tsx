@@ -1,5 +1,8 @@
 import "./Accordian.css";
+<<<<<<< HEAD
 import Icon from "../Icon.svg";
+=======
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
 
 type AccordianProps = {
   accordionData: {
@@ -33,18 +36,31 @@ const Accordian = ({ accordionData }: AccordianProps) => {
         <div className="item">
           <div className="title">
             <span>
+<<<<<<< HEAD
               {accordionData.isActive === accordionData.title ? <img src={Icon} alt="icon" /> : <img src={Icon} alt="icon" />}
             </span>
             <p>{accordionData.title}</p>
+=======
+              {accordionData.isActive === accordionData.title ? "-" : "+"}
+            </span>
+            <h2>{accordionData.title}</h2>
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
           </div>
           <div
             className={
               accordionData.isActive === accordionData.title
                 ? "content show"
                 : "content"
+<<<<<<< HEAD
             }
           >
             
+=======
+              // "content show"
+            }
+          >
+            {/* <div className="content show"> */}
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
             <hr></hr>
             <ul className="questions-list">
               {getContent(accordionData.questions)}
@@ -56,4 +72,8 @@ const Accordian = ({ accordionData }: AccordianProps) => {
   );
 };
 
+<<<<<<< HEAD
 export default Accordian;
+=======
+export default Accordian;
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930

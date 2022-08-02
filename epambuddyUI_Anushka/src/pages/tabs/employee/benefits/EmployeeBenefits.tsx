@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import "./EmployeeBenefits.css";
 // import { Link, Routes, Route } from "react-router-dom";
 
@@ -50,6 +51,15 @@ import { useState } from "react";
 
 export default () => {
   const [isActive, setIsActive] = useState("leaves");
+=======
+import "./EmployeeBenefits.css";
+import { Link, Routes, Route } from "react-router-dom";
+
+import { useState } from "react";
+
+export default () => {
+  const [isActive, setIsActive] = useState("");
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
   const clickHandler = function (e: any) {
     setIsActive(e.target.textContent.toLowerCase().split(" ")[0]);
     console.log(isActive);
@@ -58,6 +68,7 @@ export default () => {
   return (
     <div>
       <div className="heading">
+<<<<<<< HEAD
         <div className="route">
           <span>Employees</span>
           <img src={icon} />
@@ -65,11 +76,19 @@ export default () => {
         </div>
         <ul>
           <li className={`link ${isActive === "leaves" && "activeLink"}`}>
+=======
+        <ul>
+          <li className={`link ${isActive === "leaves" && "active"}`}>
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
             <Link to="/employee/benefits/leaves" onClick={clickHandler}>
               Leaves
             </Link>
           </li>
+<<<<<<< HEAD
           <li className={`link ${isActive === "medical" && "activeLink"}`}>
+=======
+          <li className={`link ${isActive === "medical" && "active"}`}>
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
             <Link
               to="/employee/benefits/medicalbenefits"
               onClick={clickHandler}
@@ -77,12 +96,20 @@ export default () => {
               Medical Benefits
             </Link>
           </li>
+<<<<<<< HEAD
           <li className={`link ${isActive === "recognition" && "activeLink"}`}>
+=======
+          <li className={`link ${isActive === "recognition" && "active"}`}>
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
             <Link to="/employee/benefits/recognition" onClick={clickHandler}>
               Recognition
             </Link>
           </li>
+<<<<<<< HEAD
           <li className={`link ${isActive === "tax" && "activeLink"}`}>
+=======
+          <li className={`link ${isActive === "tax" && "active"}`}>
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
             <Link to="/employee/benefits/taxbenefits" onClick={clickHandler}>
               Tax Benefits
             </Link>

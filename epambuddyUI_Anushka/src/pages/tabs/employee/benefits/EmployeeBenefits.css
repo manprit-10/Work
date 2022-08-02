@@ -19,7 +19,13 @@ li {
   display: block;
 }
 .heading ul {
+<<<<<<< HEAD
   display: flex;
+=======
+  /* height: 1rem; */
+  display: flex;
+
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
   align-items: center;
   margin: 2%;
   text-align: center;
@@ -27,6 +33,7 @@ li {
 .link {
   padding: 10px;
   width: 100%;
+<<<<<<< HEAD
   border-bottom: 1px solid grey;
   color: black;
 }
@@ -45,3 +52,11 @@ li {
   color: rgb(19, 120, 235);
   align-items: center;
 }
+=======
+  border-bottom: 3px solid grey;
+}
+
+.active {
+  border-bottom: 3px solid rgb(19, 120, 235);
+}
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930

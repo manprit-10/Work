@@ -11,4 +11,8 @@ export const useIsActive = function () {
     isActive,
     clickHandler,
   };
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930

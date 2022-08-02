@@ -19,10 +19,14 @@ function App() {
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
+<<<<<<< HEAD
               <Route
                 path="/search/:searchedTopic"
                 element={<SearchResults />}
               />
+=======
+              <Route path="/search" element={<SearchResults />} />
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
               <Route
                 path="/employee/benefits/*"
                 element={<EmployeeBenefits />}

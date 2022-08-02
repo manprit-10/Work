@@ -34,12 +34,21 @@ export default ({ employeeDetail }: HomeItemProps) => {
         employeeDetail.categories.map((data) => (
           <Link
             to={`/employee/benefits/${data.toLowerCase().split(" ").join("")}`}
+<<<<<<< HEAD
             
+=======
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
           >
             <div className="category">{data}</div>
           </Link>
         ))}
+<<<<<<< HEAD
         
     </div>
   );
 };
+=======
+    </div>
+  );
+};
+>>>>>>> b20e0a18bcc52387efe78b4ce63d42e56f2bc930
